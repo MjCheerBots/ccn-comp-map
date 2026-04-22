@@ -253,8 +253,8 @@ map.addLayer(cluster);
 
 // Home gym marker
 const homeIcon = L.divIcon({
-  html: '<div style="width:28px;height:28px;background:#fbbf24;border:3px solid #d97706;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 3px 10px rgba(0,0,0,.3)">★</div>',
-  className: '', iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -16]
+  html: '<div style="width:30px;height:30px;background:transparent;border:4px solid #d97706;border-radius:50%;box-shadow:0 0 0 2px rgba(251,191,36,.4),0 3px 10px rgba(0,0,0,.3)"></div>',
+  className: '', iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -18]
 });
 L.marker([47.6101, -122.2015], { icon: homeIcon, zIndexOffset: 9999 })
   .bindTooltip('<b>🏠 Home Gym — Bellevue, WA</b>', { direction: 'top' })
@@ -440,7 +440,7 @@ function buildLegend() {
       el.innerHTML += `<div class="legend-item"><div class="legend-dot" style="background:${c}"></div><span>${lb}</span></div>`;
     });
   }
-  el.innerHTML += `<div class="legend-item"><div style="width:12px;height:12px;background:#fbbf24;border:2px solid #d97706;border-radius:50%;flex-shrink:0"></div><span>🏠 Home Gym (Bellevue, WA)</span></div>`;
+  el.innerHTML += `<div class="legend-item"><div style="width:12px;height:12px;background:transparent;border:3px solid #d97706;border-radius:50%;flex-shrink:0"></div><span>🏠 Home Gym (Bellevue, WA)</span></div>`;
 }
 
 // Boot
